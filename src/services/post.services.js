@@ -50,7 +50,7 @@ async function GetListPostByTimeAndEmailCreator(timestamp, emailCreator) {
     var result = await collection
         .find(query)
         .sort({ date: -1 })
-        .limit(5)
+        .limit(2)
         .toArray();
     close();
     return result;

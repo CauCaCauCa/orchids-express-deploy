@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json({ limit: '50mb' }));
 app.use(
     cors({
-        origin: ['https://orchids-react-deploy.vercel.app', 'http://localhost:3000'], // Chỉ cho phép yêu cầu từ nguồn gốc này
+        origin: 'https://orchids-react-deploy.vercel.app', // Chỉ cho phép yêu cầu từ nguồn gốc này
         methods: ['GET', 'POST', 'PUT', 'DELETE'], // Chỉ cho phép các phương thức GET và POST
         allowedHeaders: ['Content-Type', 'Authorization'], // Chỉ cho phép các header cụ thể
     })

@@ -1,7 +1,7 @@
 const { OAuth2Client } = require('google-auth-library');
 const jwt = require('jsonwebtoken');
 
-const clientID = '721133937478-2m8nenr610qpuabsgm9ffiu5peumi8vc.apps.googleusercontent.com';
+const clientID = '575516075576-l0qf0vlpj0evqmc50k4osvofqv1qmj9f.apps.googleusercontent.com';
 const secretKey = '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'; // Replace with your own secret key
 
 // Google authentication - token from Google - use in login route

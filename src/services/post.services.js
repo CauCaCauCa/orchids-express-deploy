@@ -36,7 +36,7 @@ async function GetListPostByTime(timestamp) {
     var result = await collection
         .find(query)
         .sort({ date: -1 })
-        .limit(5)
+        .limit(3)
         .toArray();
     close();
     return result;
